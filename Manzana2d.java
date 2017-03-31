@@ -24,7 +24,7 @@ public class Manzana2d {
 			
 			//Hacemos que la posición generada sea múltiplo de 10 (tamaño de la serpiente)
 			while (tempPosX%10!=0){
-				tempPosX = generadorRandom.nextInt(width);
+				tempPosX = generadorRandom.nextInt(width-10);
 			}
 			posX = tempPosX;
 			
@@ -35,7 +35,7 @@ public class Manzana2d {
 			
 			while (tempPosY%10!=0){
 				
-				tempPosY = generadorRandom.nextInt(height);
+				tempPosY = generadorRandom.nextInt(height-10);
 			}
 			
 			posY = tempPosY;
